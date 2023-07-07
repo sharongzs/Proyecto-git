@@ -30,22 +30,33 @@ img {
 
 /** header**/
 
+
 header {
+    display: grid;
     background-color: rosybrown;
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    color: white;
+    text-align: center;
+    
+    }
+
+header .tarjeta{
+    width: 250px;
+    height: 250px;
 }
 
 header ul{
-    display: flex;
-    gap: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
-    font-style: normal;
+    text-align: center;
+    
 }
+
+header form {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+
 
 .tarjeta{
     border: 2px solid white;
@@ -59,55 +70,40 @@ header ul{
     width: 100%;
 }
 
+@media (min-width:1200px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 0.5rem;
+    text-align: center;
+}
+}
+
+
 
 /**Body**/
 
-
-
-h1{
+h1, h2, h3 {
+    display: grid;
     color: dimgrey;
     margin-right: 150px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-h3 {
-    font-family: 'Times New Roman', Times, serif;
-    color: dimgrey;
+    text-align: center;
     font-style: normal;
+    margin-bottom: 1rem;
 }
-
-h4{
-color: dimgrey;
-margin-left: 35px;
-
-}
-h2{
-    color: darkgoldenrod;
-    margin-left: 500px;
-    
-}
-
-section h2 {
-    color: darkgoldenrod;
-}
-
-section h1 {
-    color: dimgrey;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.color-dimgrey{
-    color: dimgrey;
-}
-
-
 
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: grey;
+    text-align: center;
 }
-
-
 
 .caja {
     width: 150px;
@@ -121,36 +117,53 @@ p{
 
 .flex-container {
     background-color: rgb(rgb(180, 167, 167), green, blue);
-    height: 98vh;
-
+    height: 95vh;
     display: flex;
-
     flex-direction: row;
-
     flex-wrap: wrap;
-
     justify-content: space-around;
+}
+
+.secciones{
+
+    display: grid;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    
+}
+
+@media(min-width: 1200px) {
+    .secciones{
+        display: grid;
+    }
+    
 }
 
 /**footer**/
 
 footer {
     background-color: rosybrown;
+    color: white;
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    text-align: center;
+    
+
 }
 
 footer ul{
-    display: flex;
     gap: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
-    font-style: normal;
     flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-
-
+@media (min-width: 1200px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+}
