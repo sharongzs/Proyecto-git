@@ -153,9 +153,7 @@ article p {
     margin: 0;
 }
 
-.text-center {
-    text-align: center;
-}
+
 .content{
     margin-top: 10px;
 }
@@ -170,6 +168,56 @@ article p {
     }
 }
 
+/**Seccion inicio**/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-section1 {
+    display: flex;
+    align-items: center;
+}
+
+.center-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.content {
+    flex-basis: 50%;
+}
+
+.text-center {
+    text-align: center;
+    margin: 0;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .flex-section1 {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        padding: 60px;
+    }
+}
 
 /**footer**/
 
