@@ -1,0 +1,48 @@
+$c-blanco: white;
+$c-negro: black;
+$c-grey: grey;
+$c-rosybrown: rosybrown;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link {
+    color: indianred;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --color-principal: $c-negro;
+}
+
+h1, h2, h3 {
+    color: $c-negro;
+    margin-right: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: $c-grey;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+.caja {
+    width: 150px;
+    height: 150px;
+    border: solid 3px $c-negro;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: $c-blanco;
+}
+
+.flex-container {
+    background-color: $c-blanco;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+
+.content{
+    margin-top: 10px;
+}
+
+@media(min-width: 768px) {
+    .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+    .secciones{
+        display: grid;
+    }
+}

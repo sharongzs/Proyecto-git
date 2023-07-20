@@ -1,0 +1,58 @@
+header {
+    display: grid;
+    background-color: rosybrown;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+
+    &-.tarjeta {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        border: 2px solid white;
+        }
+
+    &-.tarjeta img {
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+    &-ul {
+            text-align: center;
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 2rem;
+            gap: 5rem;
+
+        }
+
+    &-form {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+
+        }
+
+    }
+
+
+
+
+@media (min-width:1200px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        &-nav ul {
+            display: flex;
+            gap: 0.5rem;
+            text-align: center;
+
+        }
+}
+
+}
