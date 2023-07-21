@@ -5,15 +5,18 @@ footer {
     align-items: center;
     text-align: center;
     
+    ul {
+        gap: 35px;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    li {
+        margin-bottom: 30px;
+    }
 
 }
 
-footer ul{
-    gap: 35px;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    text-align: center;
-}
 
 @media (min-width: 1200px) {
     footer{

@@ -2,6 +2,8 @@ $c-blanco: white;
 $c-negro: black;
 $c-grey: grey;
 $c-rosybrown: rosybrown;
+$ff-time: 'Times New Roman', Times, serif;
+
 
 
 *{
@@ -16,7 +18,7 @@ a{
 }
 
 a:link {
-    color: indianred;
+    color: $c-blanco;
 }
 
 ul,
@@ -32,17 +34,27 @@ img {
     --color-principal: $c-negro;
 }
 
-h1, h2, h3 {
-    color: $c-negro;
+h2, h3 {
+    color: $c-rosybrown;
     margin-right: 150px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    font-family: $ff-time;
     font-style: normal;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
+
 p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $ff-time;
     color: $c-grey;
+    font-size: 1.25rem;
+}
+
+
+.caja {
+
+    font-size: 1.5rem;
+    padding: 20rem;
     text-align: center;
+    background-color: $c-blanco;
 }

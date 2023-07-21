@@ -10,7 +10,7 @@ a {
 }
 
 a:link {
-  color: indianred;
+  color: white;
 }
 
 ul,
@@ -26,19 +26,26 @@ img {
   --color-principal: $c-negro;
 }
 
-h1, h2, h3 {
-  color: black;
+h2, h3 {
+  color: rosybrown;
   margin-right: 150px;
   font-family: "Times New Roman", Times, serif;
-  text-align: center;
   font-style: normal;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 p {
   font-family: "Times New Roman", Times, serif;
   color: grey;
+  font-size: 1.25rem;
+}
+
+.caja {
+  font-size: 1.5rem;
+  padding: 20rem;
   text-align: center;
+  background-color: white;
 }
 
 article {
@@ -47,13 +54,11 @@ article {
   align-items: center;
   text-align: center;
 }
-
 article img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 article .content {
   background-color: white;
   padding: 10px;
@@ -61,11 +66,15 @@ article .content {
   color: rosybrown;
   text-align: center;
   margin-top: 10px;
+  border: 2rem;
 }
-
-article h3,
-article p {
+article h3 {
   margin: 0;
+}
+article p {
+  font-family: "Times New Roman", Times, serif;
+  color: grey;
+  font-size: 1.25rem;
 }
 
 footer {
@@ -75,12 +84,14 @@ footer {
   align-items: center;
   text-align: center;
 }
-
 footer ul {
   gap: 35px;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
+}
+footer li {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -98,25 +109,24 @@ header {
   color: white;
   text-align: center;
 }
-header-.tarjeta {
+header .tarjeta {
   width: 250px;
   height: 250px;
   display: flex;
   align-items: center;
   border: 2px solid white;
 }
-header-.tarjeta img {
+header .tarjeta img {
   max-width: 100%;
   max-height: 100%;
 }
-header-ul {
+header nav ul {
   text-align: center;
   font-size: larger;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 2rem;
-  gap: 5rem;
 }
-header-form {
+header .form {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -129,22 +139,12 @@ header-form {
     align-items: center;
     text-align: center;
   }
-  header-nav ul {
+  header nav ul {
     display: flex;
-    gap: 0.5rem;
+    gap: 3rem;
     text-align: center;
   }
 }
-.caja {
-  width: 150px;
-  height: 150px;
-  border: solid 3px black;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: white;
-}
-
 .flex-container {
   background-color: white;
   height: 95vh;
@@ -177,36 +177,39 @@ header-form {
   flex-direction: column;
   align-items: center;
 }
-
-.flex-section1 {
+.container .flex-section1 {
   display: flex;
   align-items: center;
 }
-
-.center-section1 {
+.container .center-section1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.image-container {
+.container .image-container {
   display: flex;
   flex-basis: 50%;
   justify-content: center;
+  height: 500px;
 }
-
-.content {
+.container .content {
   flex-basis: 50%;
 }
-
-.text-center {
+.container .text-center {
   text-align: center;
   margin: 0;
+}
+.container h1 {
+  color: rosybrown;
+  margin-right: 150px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 20px;
+    padding: 20.1px;
   }
   .flex-section1 {
     flex-direction: column;
@@ -217,14 +220,75 @@ header-form {
     padding: 60px;
   }
 }
-.caja {
-  width: 150px;
-  height: 150px;
-  border: solid 3px black;
-  font-size: 1.5rem;
-  padding: 0.5rem;
+.main .preguntasfrecuentes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.main .pregunta {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  text-align: left;
+}
+.main .pregunta .pregunta-texto {
+  flex: 1;
+  margin: 0;
+  color: rosybrown;
+}
+.main .pregunta h3 {
+  flex: 1;
+  margin: 0;
+  color: rosybrown;
+}
+
+.flex-section2 {
+  display: flex;
+  align-items: center;
+}
+.flex-section2 .center-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-section2 .image-container1 {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+.flex-section2 .content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px;
+}
+.flex-section2 .text-center {
   text-align: center;
-  background-color: white;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.flex-section2 p {
+  font-family: "Times New Roman", Times, serif;
+  color: grey;
+  font-size: 2rem;
+}
+.flex-section2 h3, .flex-section2 h1 {
+  color: rosybrown;
+  margin-right: 150px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .flex-container {
@@ -241,8 +305,12 @@ header-form {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-
-.content {
+.grid-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.grid-container .content {
   margin-top: 10px;
 }
 

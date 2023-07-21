@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
 .flex-section1 {
     display: flex;
@@ -19,6 +18,7 @@
     display: flex;
     flex-basis: 50%;
     justify-content: center;
+    height: 500px;
 }
 
 .content {
@@ -28,12 +28,22 @@
 .text-center {
     text-align: center;
     margin: 0;
+    }
+    
+h1 {
+    color: $c-rosybrown;
+    margin-right: 150px;
+    font-family: $ff-time;
+    font-size: 3rem;
+    text-align: center;
 }
+}
+
 
 
 @media (max-width: 767px) {
     .container {
-        padding: 20px;
+        padding: 20.1px;
     }
 
     .flex-section1 {

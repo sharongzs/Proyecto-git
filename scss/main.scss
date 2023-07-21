@@ -1,13 +1,19 @@
 @import "./base";
 
-@import "../css/components/article";
-@import "../css/components/botones";
-@import "..//css/components/footer";
-@import "..//css/components/header";
-@import "../css/components/main";
+@import "./components/article";
+@import "./components/footer";
+@import "./components/header";
 
-@import "../pages/blog";
-@import "../pages/contacto";
-@import "../pages/index";
-@import "../pages/preguntas\ frecuentes";
-@import "../pages/servicios";
+@import "./pages/blog";
+@import "./pages/contacto";
+@import "./pages/index";
+@import "./pages/preguntasfrecuentes";
+@import "./pages/servicios";
+
+
+
+
+
+
+
+

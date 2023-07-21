@@ -5,7 +5,7 @@ header {
     color: white;
     text-align: center;
 
-    &-.tarjeta {
+    .tarjeta {
         width: 250px;
         height: 250px;
         display: flex;
@@ -13,28 +13,24 @@ header {
         border: 2px solid white;
         }
 
-    &-.tarjeta img {
+    .tarjeta img {
             max-width: 100%;
             max-height: 100%;
 
         }
 
-    &-ul {
+    nav ul {
             text-align: center;
             font-size: larger;
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding: 2rem;
-            gap: 5rem;
-
         }
 
-    &-form {
+    .form {
             display: flex;
             justify-content: center;
             gap: 0.5rem;
-
         }
-
     }
 
 
@@ -47,12 +43,12 @@ header {
         align-items: center;
         text-align: center;
 
-        &-nav ul {
+        nav ul {
             display: flex;
-            gap: 0.5rem;
+            gap: 3rem;
             text-align: center;
-
         }
+
 }
 
 }
