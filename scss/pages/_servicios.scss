@@ -28,8 +28,7 @@
     .text-center {
     text-align: center;
     margin: 0;
-    justify-content: center;
-    align-items: center;
+
     }
 
     p {
@@ -39,7 +38,6 @@
     }
     h3, h1 {
         color: $c-rosybrown;
-        margin-right: 150px;
         font-family: $ff-time;
         margin-bottom: 5rem;
         font-size: 3rem;
@@ -48,8 +46,6 @@
     
 
 }
-
-
 
 .flex-container {
     background-color: $c-blanco;
@@ -86,7 +82,30 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-    .secciones{
-        display: grid;
+
+    .flex-section2 {
+        flex-direction: row;
     }
+
+    .center-section2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image-container1 {
+        flex-basis: 50%;
+        height: auto;
+    }
+
+    .image-container1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content {
+        flex-basis: 50%;
+        padding: 0 45px;
+    }
+
+
 }
