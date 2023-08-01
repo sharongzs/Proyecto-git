@@ -1,15 +1,17 @@
 footer {
-    background-color: rosybrown;
-    color: white;
+    background-color: $c-rosybrown;
+    color: $c-blanco;
     padding: 1rem;
     align-items: center;
     text-align: center;
+    
     
     ul {
         gap: 35px;
         flex-direction: column;
         margin-bottom: 3rem;
         text-align: center;
+        
     }
     li {
         margin-bottom: 30px;

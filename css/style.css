@@ -110,38 +110,29 @@ header {
   text-align: center;
 }
 header .tarjeta {
-  width: 250px;
-  height: 250px;
+  max-width: 190px;
+  max-height: 200px;
   display: flex;
-  align-items: center;
-  border: 2px solid white;
-}
-header .tarjeta img {
-  max-width: 100%;
-  max-height: 100%;
+  box-shadow: 4px 4px 4px 4px;
 }
 header nav ul {
   text-align: center;
   font-size: larger;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding: 2rem;
-}
-header .form {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
+  padding: 1rem;
 }
 
 @media (min-width: 1200px) {
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10rem;
   }
   header nav ul {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
     text-align: center;
   }
 }
@@ -177,6 +168,51 @@ header .form {
   flex-direction: column;
   align-items: center;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+section .full-image1 {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section .text-center {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 385px) {
+  .full-image1 {
+    height: 200px;
+  }
+  section {
+    padding: 0.5rem;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .container .flex-section1 {
   display: flex;
   align-items: center;
@@ -186,11 +222,24 @@ header .form {
   justify-content: center;
   align-items: center;
 }
+.container .image-container1 {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  height: 350px;
+  padding: 1rem;
+}
 .container .image-container {
   display: flex;
   flex-basis: 50%;
   justify-content: center;
-  height: 500px;
+  height: 400px;
+  padding: 1rem;
+}
+.container .full-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
 }
 .container .content {
   flex-basis: 50%;
@@ -205,11 +254,13 @@ header .form {
   font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
   text-align: center;
+  text-shadow: 5px 5px 5px;
+  padding: 2rem;
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 20.1px;
+    padding: 20px;
   }
   .flex-section1 {
     flex-direction: column;
@@ -242,7 +293,7 @@ header .form {
   margin: 0;
   color: rosybrown;
 }
-.main .pregunta h3 {
+.main .pregunta .h3 {
   flex: 1;
   margin: 0;
   color: rosybrown;
@@ -274,8 +325,6 @@ header .form {
 .flex-section2 .text-center {
   text-align: center;
   margin: 0;
-  justify-content: center;
-  align-items: center;
 }
 .flex-section2 p {
   font-family: "Times New Roman", Times, serif;
@@ -284,7 +333,6 @@ header .form {
 }
 .flex-section2 h3, .flex-section2 h1 {
   color: rosybrown;
-  margin-right: 150px;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5rem;
   font-size: 3rem;
@@ -318,8 +366,24 @@ header .form {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .secciones {
-    display: grid;
+  .flex-section2 {
+    flex-direction: row;
+  }
+  .center-section2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .image-container1 {
+    flex-basis: 50%;
+    height: auto;
+  }
+  .image-container1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    flex-basis: 50%;
+    padding: 0 45px;
   }
 }
 
