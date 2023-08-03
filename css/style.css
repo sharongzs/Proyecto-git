@@ -48,33 +48,51 @@ p {
   background-color: white;
 }
 
-article {
+section {
+  text-align: center;
+}
+section .title {
+  margin-bottom: 20px;
+}
+section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+section article {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-article img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-article .content {
   background-color: white;
   padding: 10px;
   box-sizing: border-box;
   color: rosybrown;
-  text-align: center;
-  margin-top: 10px;
-  border: 2rem;
+  border-radius: 10px;
 }
-article h3 {
+section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+section h3 {
   margin: 0;
+  margin-bottom: 10px;
 }
-article p {
+section p {
   font-family: "Times New Roman", Times, serif;
   color: grey;
   font-size: 1.25rem;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  section .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
@@ -109,12 +127,6 @@ header {
   color: white;
   text-align: center;
 }
-header .tarjeta {
-  max-width: 190px;
-  max-height: 200px;
-  display: flex;
-  box-shadow: 4px 4px 4px 4px;
-}
 header nav ul {
   text-align: center;
   font-size: larger;
@@ -128,11 +140,11 @@ header nav ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10rem;
+    gap: 30rem;
   }
   header nav ul {
     display: flex;
-    gap: 6rem;
+    gap: 1rem;
     text-align: center;
   }
 }
@@ -231,22 +243,18 @@ section .full-image1 {
 }
 .container .image-container {
   display: flex;
-  flex-basis: 50%;
+  flex-direction: column;
   justify-content: center;
-  height: 400px;
+  height: 350px;
   padding: 1rem;
 }
 .container .full-image {
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
 }
 .container .content {
-  flex-basis: 50%;
-}
-.container .text-center {
-  text-align: center;
-  margin: 0;
+  margin-top: 20px;
 }
 .container h1 {
   color: rosybrown;

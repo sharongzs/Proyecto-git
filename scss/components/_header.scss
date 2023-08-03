@@ -4,16 +4,6 @@ header {
     padding: 2rem;
     color: $c-blanco;
     text-align: center;
-    
-
-    .tarjeta {
-        max-width: 190px;
-        max-height: 200px;
-        display: flex;
-        box-shadow: 4px 4px 4px 4px;
-
-        
-        }
 
     nav ul {
             text-align: center;
@@ -21,8 +11,6 @@ header {
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding: 1rem;
         }
-
-    
     }
 
 
@@ -34,14 +22,12 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 10rem;
+        gap: 30rem;
 
         nav ul {
             display: flex;
-            gap: 6rem;
+            gap: 1rem;
             text-align: center;
         }
-
-}
-
+    }
 }
