@@ -26,12 +26,34 @@ img {
   --color-principal: $c-negro;
 }
 
-h2, h3 {
+.title1 {
   color: rosybrown;
   margin-right: 150px;
   font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 5px 5px 5px;
+  padding: 2rem;
+}
+
+.title3 {
+  color: rosybrown;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s case;
+}
+.title3:hover {
+  transform: scale(1.1);
+}
+
+.title2 {
+  color: rosybrown;
+  font-family: "Times New Roman", Times, serif;
   font-style: normal;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -41,16 +63,6 @@ p {
   font-size: 1.25rem;
 }
 
-.caja {
-  font-size: 1.5rem;
-  padding: 20rem;
-  text-align: center;
-  background-color: white;
-}
-
-section {
-  text-align: center;
-}
 section .title {
   margin-bottom: 20px;
 }
@@ -71,6 +83,13 @@ section article {
   box-sizing: border-box;
   color: rosybrown;
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.117);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.117);
+  transition: all 0.5s;
+}
+section article:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.117);
 }
 section img {
   width: 100%;
@@ -98,7 +117,7 @@ section p {
 footer {
   background-color: rosybrown;
   color: white;
-  padding: 1rem;
+  padding: 0.2rem;
   align-items: center;
   text-align: center;
 }
@@ -167,67 +186,38 @@ header nav ul {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  .secciones {
-    display: grid;
-  }
+.imagen-blog {
+  position: relative;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.imagen-blog h1 {
+  position: absolute;
+  top: 70%;
+  left: 100%;
+  transform: translate(-50%, -50%);
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-section .full-image1 {
-  width: 50%;
-  height: auto;
+.full-image2 {
+  width: 100%;
+  height: 90%;
   object-fit: cover;
-  max-width: 100%;
-}
-@media (min-width: 768px) {
-  section {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  section .text-center {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  section div {
-    flex-basis: 50%;
-  }
 }
 
-@media (max-width: 385px) {
-  .full-image1 {
-    height: 200px;
-  }
-  section {
-    padding: 0.5rem;
-  }
-  .form-control {
-    width: 100%;
-  }
-}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.container .section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
 }
 .container .flex-section1 {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  gap: 10rem;
 }
 .container .center-section1 {
   display: flex;
@@ -236,61 +226,49 @@ section .full-image1 {
 }
 .container .image-container1 {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 350%;
   justify-content: center;
-  max-height: 350px;
-  max-width: 350px;
-  padding: 1rem;
+  align-items: center;
+  max-height: 500px;
+  max-width: 500px;
+  overflow: hidden;
+  transition: transform 0.3s case;
 }
-.container .image-container {
+.container .image-container1:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100px;
-  padding: 1rem;
-}
-.container .full-image {
-  width: 90%;
-  height: 50%;
-  object-fit: cover;
-}
-.container .content {
-  margin-top: 20px;
-}
-.container h1 {
-  color: rosybrown;
-  margin-right: 150px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 3rem;
-  text-align: center;
-  text-shadow: 5px 5px 5px;
-  padding: 2rem;
+  height: 340px;
+  width: 340px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-@media (max-width: 767px) {
-  .container {
-    padding: 20px;
-  }
-  .flex-section1 {
-    flex-direction: column;
-  }
+.full-image {
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  padding: 3rem;
+  border-radius: 9%;
 }
-@media (min-width: 1200px) {
-  .container {
-    padding: 60px;
-  }
+
+.content {
+  margin-top: 20px;
 }
+
 .main .preguntasfrecuentes {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.main h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 .main .pregunta {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 20px;
@@ -298,33 +276,33 @@ section .full-image1 {
   text-align: left;
 }
 .main .pregunta .pregunta-texto {
-  flex: 1;
   margin: 0;
   color: rosybrown;
 }
 .main .pregunta .h3 {
-  flex: 1;
   margin: 0;
   color: rosybrown;
 }
 
 .flex-section2 {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 5rem;
 }
 .flex-section2 .center-section2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.flex-section2 .image-container1 {
+.flex-section2 .image-seccion {
   display: flex;
   flex-basis: 50%;
   justify-content: center;
   height: 500px;
   align-items: center;
 }
-.flex-section2 .content {
+.flex-section2 .seccion {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -335,18 +313,6 @@ section .full-image1 {
   text-align: center;
   margin: 0;
 }
-.flex-section2 p {
-  font-family: "Times New Roman", Times, serif;
-  color: grey;
-  font-size: 2rem;
-}
-.flex-section2 h3, .flex-section2 h1 {
-  color: rosybrown;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 5rem;
-  font-size: 3rem;
-  text-align: center;
-}
 
 .flex-container {
   background-color: white;
@@ -355,45 +321,6 @@ section .full-image1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-.grid-container .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-.grid-container .content {
-  margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  .flex-section2 {
-    flex-direction: row;
-  }
-  .center-section2 {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .image-container1 {
-    flex-basis: 50%;
-    height: auto;
-  }
-  .image-container1 img {
-    max-width: 100%;
-    height: auto;
-  }
-  .content {
-    flex-basis: 50%;
-    padding: 0 45px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,12 +17,14 @@
     margin-top: 10px;
 }
 
-@media(min-width: 768px) {
-    .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-    .secciones{
-        display: grid;
+.imagen-blog {
+    position: relative;
+    
+    h1 {
+        position: absolute;
+        top: 70%;
+        left: 100%;
+        transform: translate(-50%,-50%);
     }
 }
+

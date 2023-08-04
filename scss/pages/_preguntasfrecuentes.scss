@@ -2,16 +2,12 @@
     .preguntasfrecuentes {
     display: flex;
     flex-direction: column;
-    align-items: flex-start
-}
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .pregunta {
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         margin-bottom: 20px;
@@ -19,13 +15,11 @@ h1 {
         text-align: left;
 
         .pregunta-texto {
-            flex: 1;
             margin: 0;
             color: $c-rosybrown;
         }
 
         .h3 {
-            flex: 1;
             margin: 0;
             color: $c-rosybrown;
             }

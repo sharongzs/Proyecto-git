@@ -4,8 +4,6 @@ $c-grey: grey;
 $c-rosybrown: rosybrown;
 $ff-time: 'Times New Roman', Times, serif;
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -34,12 +32,35 @@ img {
     --color-principal: $c-negro;
 }
 
-h2, h3 {
+.title1 {
+        color: $c-rosybrown;
+        margin-right: 150px;
+        font-family: $ff-time;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 5px 5px 5px;
+        padding: 2rem;
+        }  
+        
+        
+.title3 {
+        color: $c-rosybrown;
+        font-family: $ff-time;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        overflow: hidden;
+        transition: transform 0.3s case;
+        &:hover {
+            transform: scale(1.1);
+        }
+        }
+
+.title2 {
     color: $c-rosybrown;
-    margin-right: 150px;
     font-family: $ff-time;
     font-style: normal;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -51,10 +72,3 @@ p{
 }
 
 
-.caja {
-
-    font-size: 1.5rem;
-    padding: 20rem;
-    text-align: center;
-    background-color: $c-blanco;
-}

@@ -1,6 +1,4 @@
 section {
-    text-align: center;
-
     .title {
         margin-bottom: 20px;
     }
@@ -23,6 +21,13 @@ section {
         box-sizing: border-box;
         color: $c-rosybrown;
         border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.117);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.117);
+        transition: all 0.5s;
+        &:hover{
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.117);
+        }
     }
 
     img {
