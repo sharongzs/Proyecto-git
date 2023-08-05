@@ -10,24 +10,24 @@ header {
             font-size: larger;
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding: 1rem;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
-
-
-
 
 @media (min-width:1200px) {
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 30rem;
-
-        nav ul {
+        header{
             display: flex;
-            gap: 1rem;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            gap: 30rem;
+    
+            nav ul {
+                display: flex;
+                gap: 1rem;
+                text-align: center;
+            }
         }
     }
-}
