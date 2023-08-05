@@ -337,7 +337,7 @@ input[type=reset]:hover {
   }
   .title1 {
     color: rosybrown;
-    margin-right: 150px;
+    margin-right: 0;
     font-family: "Times New Roman", Times, serif;
     font-size: 3rem;
     text-align: center;
@@ -419,7 +419,7 @@ input[type=reset]:hover {
     gap: none;
   }
   .flex-section2 .seccion {
-    padding: 0rem;
+    padding: 0;
   }
 }
 

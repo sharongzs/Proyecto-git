@@ -1,23 +1,23 @@
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        .flex-section1 {
+    .flex-section1 {
         display: flex;
         align-items: center;
         flex-direction: row;
         gap: 10rem;
-        }
+    }
 
-        .center-section1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    .center-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .image-container1 {
+    .image-container1 {
         display: flex;
         flex-basis: 350%;
         justify-content: center;
@@ -33,11 +33,12 @@
 }
 
     .section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7rem;
     }
+
     .image-container {
         display: flex;
         flex-direction: column;
@@ -61,7 +62,7 @@
         overflow: hidden; 
     }
     .content {
-    margin-top: 20px;
+        margin-top: 20px;
     }
     
     @media (max-width: 1200px) { 
@@ -70,17 +71,18 @@
         flex-direction: column;
         gap: 2rem;
         } 
+    
     .container .section1 {
         padding: 0; 
-        }
+    }
 
     .title1 {
-            color: rosybrown;
-            margin-right: 150px; 
-            font-family: "Times New Roman", Times, serif;
-            font-size: 3rem;
-            text-align: center;
-            text-shadow: 5px 5px 5px;
-            padding: 2rem;
-        }
+        color: rosybrown;
+        margin-right: 0; 
+        font-family: "Times New Roman", Times, serif;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 5px 5px 5px;
+        padding: 2rem;
+    }
 }
