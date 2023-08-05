@@ -92,7 +92,7 @@ p {
 section .title {
   margin-bottom: 20px;
 }
-section .grid-container {
+section .grid-container1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
@@ -136,7 +136,7 @@ section p {
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
-  section .grid-container {
+  section .grid-container1 {
     grid-template-columns: 1fr;
   }
 }
@@ -330,7 +330,7 @@ input[type=reset]:hover {
   .container .flex-section1 {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
   .container .section1 {
     padding: none;

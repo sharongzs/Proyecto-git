@@ -3,7 +3,7 @@ section {
         margin-bottom: 20px;
     }
 
-    .grid-container {
+    .grid-container1 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px;
@@ -52,7 +52,7 @@ section {
     }
 
     @media (max-width: 768px) {
-        .grid-container {
+        .grid-container1 {
             grid-template-columns: 1fr;
         }
     }
