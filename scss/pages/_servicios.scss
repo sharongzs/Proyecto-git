@@ -47,3 +47,15 @@
     justify-content: space-around;
 }
 
+@media (max-width: 1000px) {
+    .flex-section2 {
+        flex-direction: column; 
+        align-items: center;
+        gap: none;
+    }
+    
+    .flex-section2 .seccion {
+       padding: none;
+    }
+
+}
