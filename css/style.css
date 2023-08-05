@@ -333,7 +333,16 @@ input[type=reset]:hover {
     gap: 2rem;
   }
   .container .section1 {
-    padding: none;
+    padding: 0;
+  }
+  .title1 {
+    color: rosybrown;
+    margin-right: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 5px 5px 5px;
+    padding: 2rem;
   }
 }
 .main .preguntasfrecuentes {
@@ -355,6 +364,13 @@ input[type=reset]:hover {
   color: rosybrown;
 }
 
+@media (max-width: 1000px) {
+  .main,
+  .pregunta {
+    gap: 0;
+    align-items: center;
+  }
+}
 .flex-section2 {
   display: flex;
   flex-direction: row;
@@ -403,7 +419,7 @@ input[type=reset]:hover {
     gap: none;
   }
   .flex-section2 .seccion {
-    padding: none;
+    padding: 0rem;
   }
 }
 
