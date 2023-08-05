@@ -28,11 +28,20 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 786px) {
 section .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     margin: 0 auto;
+    }
+
+    .imagen-blog {
+        position: relative;
+        
+        h1 {
+            bottom: 20%;
+            left: 60%;
+        }
     }
 }
